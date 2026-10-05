@@ -14,8 +14,8 @@ SKILLS = (
     "brainstorm-design",
     "mindful-code",
 )
-START = "<!-- dbudzki-code-skills:start -->"
-END = "<!-- dbudzki-code-skills:end -->"
+START = "<!-- ematerasu-code-skills:start -->"
+END = "<!-- ematerasu-code-skills:end -->"
 
 
 def skill_files(source):
@@ -77,7 +77,7 @@ def install(source, home):
 
     for tool, filename in ((".codex", "AGENTS.md"), (".claude", "CLAUDE.md")):
         path = home / tool / filename
-        backup = path.with_name(path.name + ".before-dbudzki-code-skills")
+        backup = path.with_name(path.name + ".before-ematerasu-code-skills")
         if path.is_symlink() or backup.is_symlink():
             raise ValueError("Review existing instruction or backup symlink: " + str(path))
         current = path.read_text() if path.exists() else ""

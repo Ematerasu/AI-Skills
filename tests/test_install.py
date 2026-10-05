@@ -30,7 +30,7 @@ class InstallationTests(unittest.TestCase):
             path = self.home / tool / filename
             original = "# Existing rules\n\nKeep my workflow.\n"
             self.assertTrue(path.read_text().startswith(original))
-            backup = path.with_name(filename + ".before-dbudzki-code-skills")
+            backup = path.with_name(filename + ".before-ematerasu-code-skills")
             self.assertEqual(backup.read_text(), original)
         for name in installer.SKILLS:
             for tool in (".codex", ".claude"):

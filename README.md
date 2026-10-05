@@ -1,4 +1,4 @@
-# dbudzki-code-skills
+# Ematerasu-code-skills
 
 Five skills and standing instructions for Claude Code, Codex, and Cursor. They support clear Polish and English explanations, visual design, and pragmatic code quality across languages.
 
@@ -25,7 +25,7 @@ The installer:
 - Copies the five skills and their license to `~/.codex/skills` and `~/.claude/skills`.
 - Adds discovery symlinks under `~/.agents/skills`, the global skill location documented by current Codex versions.
 - Merges a marked section into `~/.codex/AGENTS.md` and `~/.claude/CLAUDE.md`, preserving content outside that section.
-- Backs up each existing instruction file before the first change, using the suffix `.before-dbudzki-code-skills`.
+- Backs up each existing instruction file before the first change, using a dedicated backup suffix.
 - Checks destinations before writing. Conflicting skill files or discovery links stop installation. Identical installations can be run again.
 
 The installer does not change credentials, plugins, or tool settings. If a skill has explicitly been disabled in your tool's configuration, enable it through that tool. If `AGENTS.override.md` exists in your Codex home, the installer stops so its instruction precedence can be resolved deliberately.
